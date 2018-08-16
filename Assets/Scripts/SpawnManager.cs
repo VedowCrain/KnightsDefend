@@ -13,6 +13,8 @@ public class SpawnManager : MonoBehaviour
 
     public int numberOfEnemies;
     public int numberOfWaves;
+    public float timer = 0;
+    private float currenttime;
 
 
     public Transform[] spawnPoints;
@@ -20,13 +22,24 @@ public class SpawnManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        currenttime = timer;
         numberOfEnemies = 1;
 
         //Creature.Add(Prefab1);
         //Creature.Add(Prefab2);
         //Creature.Add(Prefab3);
-        StartCoroutine(SpawnWave());
+        
+    }
+
+    private void Update()
+    {
+        timer -= Time.deltaTime;
+
+        if (timer <= 0f)
+        {
+            StartCoroutine(SpawnWave());
+            timer = currenttime;
+        }
     }
 
     int waveCount = 0;

@@ -1366,6 +1366,7 @@ MonoBehaviour:
   - {fileID: 1867477207177404, guid: 7723e4c5a2256cc4588b356435b3b5c8, type: 2}
   numberOfEnemies: 1
   numberOfWaves: 0
+  timer: 120
   spawnPoints:
   - {fileID: 283601028}
   - {fileID: 905353420}
@@ -2083,9 +2084,12 @@ MonoBehaviour:
   timeToCombo: 0.4
   pressedAttack: 1
   pressedAttackWithinComboLimit: 0
-  audioSource: {fileID: 0}
-  footstepClips: []
-  fpsController: {fileID: 0}
+  audioSource: {fileID: 1809892385}
+  footstepClips:
+  - {fileID: 8300000, guid: 93621017e03c0614caeccd84f85bea0b, type: 3}
+  - {fileID: 8300000, guid: be24994f06639af40a8c93bce72219da, type: 3}
+  - {fileID: 8300000, guid: e520919f02608ef4da92e7ca81dcd92f, type: 3}
+  fpsController: {fileID: 1809892384}
 --- !u!4 &296270569 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4964338810846474, guid: 246557583f83d604fba5ecb602243152,
@@ -7088,9 +7092,9 @@ MonoBehaviour:
   pressedAttackWithinComboLimit: 0
   audioSource: {fileID: 1809892385}
   footstepClips:
-  - {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
-  - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
-  - {fileID: 8300000, guid: 5a9383dda6cabc047b7a297602e93eb4, type: 3}
+  - {fileID: 8300000, guid: 93621017e03c0614caeccd84f85bea0b, type: 3}
+  - {fileID: 8300000, guid: be24994f06639af40a8c93bce72219da, type: 3}
+  - {fileID: 8300000, guid: e520919f02608ef4da92e7ca81dcd92f, type: 3}
   fpsController: {fileID: 1809892384}
 --- !u!1 &1181446981 stripped
 GameObject:
@@ -11357,7 +11361,6 @@ GameObject:
   - component: {fileID: 1809892386}
   - component: {fileID: 1809892385}
   - component: {fileID: 1809892384}
-  - component: {fileID: 1809892390}
   m_Layer: 9
   m_Name: FPSController
   m_TagString: Player
@@ -11620,18 +11623,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: -0.5, z: 0}
---- !u!114 &1809892390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1809892383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3416bc7a1bd775542850422f8272ee6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
 --- !u!114 &1809892391
 MonoBehaviour:
   m_ObjectHideFlags: 0
