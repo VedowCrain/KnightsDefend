@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.28419232, g: 0.4643469, b: 0.66124064, a: 1}
+  m_IndirectSpecularColor: {r: 0.2841277, g: 0.46433252, b: 0.6612399, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -112,7 +112,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: c207dec051cbad5449eabf43d1b28fd4, type: 2}
+  m_NavMeshData: {fileID: 0}
 --- !u!1001 &4406284
 Prefab:
   m_ObjectHideFlags: 0
@@ -1606,6 +1606,62 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 0d857c047977be74c9cf8b80f118da6c, type: 3}
   m_PrefabInternal: {fileID: 1416865295}
+--- !u!114 &251735378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 251735377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 658490984
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 23800000, guid: d04efd164b6300b4da05f2ff8280a396, type: 2}
+--- !u!114 &251735379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 251735377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 23800000, guid: baf85eb76439165499150048d8a8d695, type: 2}
 --- !u!4 &251735380 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 0d857c047977be74c9cf8b80f118da6c, type: 3}
@@ -2024,6 +2080,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chrAnim: {fileID: 296270571}
   speed: 0.5
+  timeToCombo: 0.4
+  pressedAttack: 1
+  pressedAttackWithinComboLimit: 0
+  audioSource: {fileID: 0}
+  footstepClips: []
+  fpsController: {fileID: 0}
 --- !u!4 &296270569 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4964338810846474, guid: 246557583f83d604fba5ecb602243152,
@@ -4655,8 +4717,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 749265800}
-  m_LocalRotation: {x: -4.0389676e-28, y: -1.0048591e-14, z: 2.0097185e-14, w: 1}
-  m_LocalPosition: {x: -3.5195332, y: -0.28459096, z: -17.426762}
+  m_LocalRotation: {x: 0.20313193, y: 0.1883892, z: 0.039857004, w: -0.96003044}
+  m_LocalPosition: {x: 8.913652, y: -5.8911085, z: -36.530758}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 251735380}
@@ -7021,6 +7083,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chrAnim: {fileID: 1178654537}
   speed: 0.5
+  timeToCombo: 1
+  pressedAttack: 1
+  pressedAttackWithinComboLimit: 0
+  audioSource: {fileID: 1809892385}
+  footstepClips:
+  - {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
+  - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
+  - {fileID: 8300000, guid: 5a9383dda6cabc047b7a297602e93eb4, type: 3}
+  fpsController: {fileID: 1809892384}
 --- !u!1 &1181446981 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 3ce3780c6dd2e3c488bd7c8b35d1b0ae, type: 3}
@@ -11282,7 +11353,6 @@ GameObject:
   m_Component:
   - component: {fileID: 882892256}
   - component: {fileID: 1809892387}
-  - component: {fileID: 1809892388}
   - component: {fileID: 1809892391}
   - component: {fileID: 1809892386}
   - component: {fileID: 1809892385}
@@ -11550,17 +11620,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: -0.5, z: 0}
---- !u!114 &1809892388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1809892383}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 907fba1e411c7af46b6e205559c0c53b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1809892390
 MonoBehaviour:
   m_ObjectHideFlags: 0
