@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: cb31a8c61ffc8ff488a74efd2c0a1ad9
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: JMH Typewriter mono Fine
+  fontNames:
+  - JMH Typewriter mono Fine
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 779a23f415f200a45be66ef738c3f7d3, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

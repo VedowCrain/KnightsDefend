@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 952d88ec04276b34b9804f2b0123b3fc
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: JMH Typewriter mono Black Under
+  fontNames:
+  - JMH Typewriter mono Black Under
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 0dc2af234121b884a8d1bb0b1ab44148, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
