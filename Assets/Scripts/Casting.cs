@@ -38,7 +38,18 @@ public class Casting : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyDown(buildToggleKey))
-        buildMode = !buildMode;
+        {
+            buildMode = !buildMode;
+
+            if (!buildMode)
+            {
+                targetObject.position = new Vector3(0, 0, 0);
+                stoneWall.position = new Vector3(0, 0, 0);
+                woodWall.position = new Vector3(0, 0, 0);
+            }
+        }
+
+
 
 
         if (buildMode)
@@ -70,7 +81,7 @@ public class Casting : MonoBehaviour
 
                 if (Input.GetKeyDown(Rotate))
                 {
-                   targetObject.Rotate(0, 90, 0);
+                    targetObject.Rotate(0, 90, 0);
                 }
 
                 if (Input.GetKeyDown(mat_1))
@@ -94,13 +105,7 @@ public class Casting : MonoBehaviour
                 woodWall.position = new Vector3(0, 0, 0);
             }
 
-            /*if (!buildMode)
-            {
-                targetObject.position = new Vector3(0,0,0);
-                stoneWall.position = new Vector3(0, 0, 0);
-                woodWall.position = new Vector3(0, 0, 0);
-            }*/
         }
-       
+
     }
 }
