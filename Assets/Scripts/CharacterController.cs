@@ -62,6 +62,11 @@ public class CharacterController : MonoBehaviour
             pressedAttackWithinComboLimit = false;
         }
 
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            chrAnim.SetTrigger("Special");
+        }
+
     }
 
     public void FootR()
